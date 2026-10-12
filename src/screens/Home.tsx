@@ -60,7 +60,7 @@ export function Home({
             <RewardIcon routineId={today.id} size={48} />
             <div>
               <h3>{cleanName(today.name)}</h3>
-              {REWARDS[today.id] && <small className="muted">Earns {REWARDS[today.id].name}</small>}
+              {REWARDS[today.id] && <small className="muted">Earns {REWARDS[today.id].name}, one of seven in the Pokedex's training kit</small>}
             </div>
           </div>
           <p>{today.items.length} exercises · {today.items.reduce((n, it) => n + it.sets, 0)} sets{skills.length ? ` · + ${skills.map((k) => k.name).join(', ')}` : ''}</p>

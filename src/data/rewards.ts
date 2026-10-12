@@ -1,6 +1,8 @@
 // Each workout in the split earns its own item, drawn from the same sprite set
 // Pokedex uses. None of these are used there for a domain mark, a currency, a
-// shard, a ball, a held item or a shop good, so they never collide.
+// shard, a ball, a held item or a shop good, so they never collide. The Pokedex
+// reads the routine of each finished workout and drops the same piece of gear
+// (pokedex/core/economy.ts GEAR): one of all seven forges a Red Shard.
 export interface Reward {
   name: string
   /** file in public/rewards (named for the item, as in Pokedex) */

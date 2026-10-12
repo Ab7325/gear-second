@@ -81,7 +81,7 @@ export function Session({
         <div className="celebrate">
           <span className="celebrate-badge" aria-hidden="true"><Trophy size={34} strokeWidth={2.5} /></span>
           <h2>Workout complete</h2>
-          {w.routineId && REWARDS[w.routineId] && <p className="reward-line"><RewardIcon routineId={w.routineId} size={36} /> {REWARDS[w.routineId].name} earned</p>}
+          {w.routineId && REWARDS[w.routineId] && <p className="reward-line"><RewardIcon routineId={w.routineId} size={36} /> {REWARDS[w.routineId].name} earned for the Pokedex's training kit</p>}
           {prs.length > 0 && <p className="gold">{prs.length} new record{prs.length > 1 ? 's' : ''}</p>}
         </div>
       )}

@@ -4,7 +4,6 @@ import { exerciseById, useStore } from '../lib/store'
 import { dateLabel, exerciseSessions, fmtSet } from '../lib/stats'
 import { RAMP, UNFILLED } from '../lib/theme'
 import { BodyMap } from '../components/BodyMap'
-import { VITALS_URL } from '../lib/links'
 
 export function ExerciseDetail({ id, onBack, onOpenSession }: { id: string; onBack: () => void; onOpenSession: (id: string) => void }) {
   const s = useStore()
@@ -35,7 +34,6 @@ export function ExerciseDetail({ id, onBack, onOpenSession }: { id: string; onBa
       <section>
         <div className="section-head">
           <h2>History</h2>
-          <a className="link" href={VITALS_URL} target="_blank" rel="noreferrer">Progress and records in Vitals</a>
         </div>
         {sessions.length === 0 && <p className="card empty">No sets logged for this exercise yet.</p>}
         {sessions.map(({ w, e }) => (
